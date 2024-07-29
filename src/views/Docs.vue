@@ -5,5 +5,5 @@
 <template>
   <h1 class="bright title">Docs</h1>
   <h2>The roblox-cs documentation</h2>
-  <img alt="under construction" href="https://roblox-cs.com/under-construction.png"/>
+  <img alt="under construction" src="https://roblox-cs.com/under-construction.png"/>
 </template>
