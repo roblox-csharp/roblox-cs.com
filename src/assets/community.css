@@ -9,11 +9,11 @@
 }
 
 a.nice-hl {
-  color: rgb(101, 121, 209);
+  color: rgb(101, 209, 103);
 }
 
 a.nice-hl:hover {
-  color: rgb(146, 166, 255);
+  color: rgb(148, 255, 146);
 }
 
 .description-body p {
