@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from "vue";
 
-const pages = ["Home", "Community", "Docs", "API"];
+const pages = ["Home", "Community", "Docs"];
 const selectedPage = ref("Home");
 
 function selectPage(page: string): void {

@@ -6,6 +6,8 @@ import App from "./App.vue";
 import Home from "./views/Home.vue";
 import Community from "./views/Community.vue";
 import Install from "./views/Install.vue";
+import Playground from "./views/Playground.vue";
+import Docs from "./views/Docs.vue";
 
 const router = createRouter({
   history: createWebHistory(),

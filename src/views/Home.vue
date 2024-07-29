@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-import HTTPServerExample from "@/components/code-examples/HTTPServerExample.vue"
+import LavaExample from "@/components/code-examples/LavaExample.vue";
 </script>
 
 <script lang="ts">
@@ -43,5 +43,5 @@ export default {
 
 	<h1 class="bright push-down-much">Latest release: <p style="font-weight: 700; display: inline;">{{ latestRelease }}</p></h1>
 
-	<HTTPServerExample class="push-down"/>
+	<LavaExample class="push-down"/>
 </template>
