@@ -25,7 +25,7 @@ export default {
 
 <template>
 	<h1 class="bright title">roblox-cs</h1>
-	<h3>Roblox C# is a C# to Luau compiler built for Roblox.</h3>
+	<h3>roblox-cs is a C# to Luau compiler built for Roblox.</h3>
 
 	<div id="main-button-list">
 		<ul>

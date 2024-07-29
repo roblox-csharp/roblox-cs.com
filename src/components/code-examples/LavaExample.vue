@@ -1,16 +1,17 @@
 <template>
-  <pre><code class="cs-codeblock"><span class="cs-com">## A basic HTTP request</span>
-<span class="cs-kw">use</span> <span class="cs-fn">writeln</span> <span class="cs-kw">from</span> <span class="cs-str"><span class="cs-op">@</span>std<span class="cs-op">/</span>io</span>
-<span class="cs-kw">use</span> <span class="cs-fn">request</span> <span class="cs-kw">from</span> <span class="cs-str"><span class="cs-op">@</span>http</span>
+  <pre><code class="cs-codeblock"><span class="cs-com">## A basic Lava component</span>
+<span class="cs-kw">using</span> <span class="cs-id">Roblox</span><span class="cs-op">;</span>
 
-<span class="cs-com">## This will be included in @http eventually</span>
-<span class="cs-kw">interface</span> <span class="cs-class">Response</span> <span class="cs-b1">{</span>
-&ThickSpace;<span class="cs-b1">()</span> <span class="cs-op">::</span> <span class="cs-kw">any</span> <span class="cs-id">json</span>
+<span class="cs-kw">foreach</span> <span class="cs-b1">(</span><span class="cs-kw">var</span> <span class="cs-id">instance</span> <span class="cs-kw">in</span> <span class="cs-class">Services</span><span class="cs-op">.</span><span class="cs-id">CollectionService</span><span class="cs-op">.</span><span class="cs-fn">GetTagged</span><span class="cs-b2">(</span><span class="cs-op">"</span><span class="cs-str">Lava</span><span class="cs-op">"</span><span class="cs-b2">)</span><span class="cs-b1">)</span>
+<span class="cs-b1">{</span>
+&ThickSpace;<span class="cs-kw">if</span> <span class="cs-b2">(</span><span class="cs-id">instance</span> <span class="cs-kw">is</span> <span class="cs-class">BasePart</span> <span class="cs-id">instance</span><span class="cs-b2">)</span>
+&ThickSpace;<span class="cs-b2">{</span>
+&ThickSpace;&ThickSpace;<span class="cs-id">part</span><span class="cs-op">.</span><span class="cs-id">Touched</span><span class="cs-op">.</span><span class="cs-fn">Connect</span><span class="cs-b3">(</span><span class="cs-id">part</span> <span class="cs-op">=></span> <span class="cs-b1">{</span>
+&ThickSpace;&ThickSpace;&ThickSpace;<span class="cs-id">part</span><span class="cs-op">.</span><span class="cs-id">Parent</span><span class="cs-op">?</span>
+&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;<span class="cs-op">.</span><span class="cs-fn">FindFirstChildOfClass</span><span class="cs-op">&lt;</span><span class="cs-class">BasePart</span><span class="cs-op">&gt;()?</span>
+&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;<span class="cs-op">.</span><span class="cs-fn">TakeDamage</span><span class="cs-op">(</span><span class="cs-num">100</span><span class="cs-op">)</span>
+&ThickSpace;&ThickSpace;<span class="cs-b1">}</span><span class="cs-b3">)</span><span class="cs-op">;</span>
+&ThickSpace;<span class="cs-b2">}</span>
 <span class="cs-b1">}</span>
-
-<span class="cs-class">Response</span> <span class="cs-id">res</span> <span class="cs-op">=</span> <span class="cs-fn">request</span><span class="cs-b1">(</span><span class="cs-str"><span class="cs-op">"</span>https://api.sampleapis.com/coffee/hot<span class="cs-op">"</span></span><span class="cs-op">,</span> <span class="cs-b3">{</span>
-&ThickSpace;<span class="cs-id">method</span><span class="cs-op">:</span> <span class="cs-str"><span class="cs-op">"</span>GET<span class="cs-op">"</span></span>
-<span class="cs-b3">}</span><span class="cs-b1">)</span>
-
-<span class="cs-fn">writeln</span><span class="cs-b1">(</span><span class="cs-id">res</span><span class="cs-op">.</span><span class="cs-fn">json</span><span class="cs-b1">()</span><span class="cs-b1">)</span></code></pre>
+</code></pre>
 </template>
