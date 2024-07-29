@@ -1,0 +1,35 @@
+#main-button-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+}
+
+#main-button-list ul {
+  list-style: none;
+  display: contents;
+}
+
+:root {
+  --btn-light-color: rgb(207, 207, 207);
+}
+
+#main-button-list .main-button {
+  margin: 0px 15px;
+  padding: 3px 10px;
+  font-size: large;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 4px;
+  background-color: var(--color-background);
+  color: var(--btn-light-color);
+  border-color: var(--btn-light-color);
+  transition: 0.4s;
+}
+
+#main-button-list .main-button:hover {
+  background-color: var(--btn-light-color);
+  color: var(--color-background-mute);
+  cursor: pointer;
+}

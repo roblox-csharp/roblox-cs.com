@@ -1,0 +1,36 @@
+@import "./base.css";
+@import "./nav.css";
+@import "./home.css";
+@import "./syntax-highlighting.css";
+@import "./community.css";
+
+#app {
+  max-width: 1280px;
+  padding: 2rem;
+  margin: 0 auto;
+
+  font-weight: normal;
+}
+
+.no-border {
+  border: 0px;
+}
+
+.bright {
+  color: #d4d4d4;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 350%;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+}
