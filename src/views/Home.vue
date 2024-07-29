@@ -42,6 +42,5 @@ export default {
 	</div>
 
 	<h1 class="bright push-down-much">Latest release: <p style="font-weight: 700; display: inline;">{{ latestRelease }}</p></h1>
-
 	<LavaExample class="push-down"/>
 </template>
