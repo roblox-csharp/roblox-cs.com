@@ -1,6 +1,5 @@
 <template>
   <pre><code class="cs-codeblock"><span class="cs-com">// A basic Lava component</span>
-<span class="cs-kw">using</span> <span class="cs-id">Roblox</span><span class="cs-op">;</span>
 
 <span class="cs-kw">foreach</span> <span class="cs-b1">(</span><span class="cs-kw">var</span> <span class="cs-id">instance</span> <span class="cs-kw">in</span> <span class="cs-class">Services</span><span class="cs-op">.</span><span class="cs-id">CollectionService</span><span class="cs-op">.</span><span class="cs-fn">GetTagged</span><span class="cs-b2">(</span><span class="cs-op">"</span><span class="cs-str">Lava</span><span class="cs-op">"</span><span class="cs-b2">)</span><span class="cs-b1">)</span>
 <span class="cs-b1">{</span>
