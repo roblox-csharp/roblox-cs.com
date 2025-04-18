@@ -7,7 +7,7 @@
 &ThickSpace;<span class="cs-id">part</span><span class="cs-op">.</span><span class="cs-id">Touched</span> <span class="cs-op">+=</span> <span class="cs-fn">OnPartTouch</span><span class="cs-op">;</span>
 <span class="cs-b1">}</span>
 
-<span class="cs-kw">void</span> <span class="cs-fn">OnPartTouch</span><span class="cs-b1">(</span><span class="cs-class">BasePart</span> <span class="cs-id">id</span><span class="cs-b1">)</span> <span class="cs-op">=></span>
+<span class="cs-kw">void</span> <span class="cs-fn">OnPartTouch</span><span class="cs-b1">(</span><span class="cs-class">BasePart</span> <span class="cs-id">hit</span><span class="cs-b1">)</span> <span class="cs-op">=></span>
 &ThickSpace;&ThickSpace;<span class="cs-id">hit</span><span class="cs-op">.</span><span class="cs-id">Parent</span><span class="cs-op">?</span>
 &ThickSpace;&ThickSpace;&ThickSpace;<span class="cs-op">.</span><span class="cs-fn">FindFirstChildOfClass</span><span class="cs-op">&lt;</span><span class="cs-class">Humanoid</span><span class="cs-op">&gt;()?</span>
 &ThickSpace;&ThickSpace;&ThickSpace;<span class="cs-op">.</span><span class="cs-fn">TakeDamage</span><span class="cs-op">(</span><span class="cs-num">100</span><span class="cs-op">)</span><span class="cs-op">;</span>
